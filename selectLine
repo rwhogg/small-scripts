@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]
+then
+    echo "Usage: $0 <line to select> <file>";
+    exit 1;
+fi
+
+sed -n "${1}p" $2;
+

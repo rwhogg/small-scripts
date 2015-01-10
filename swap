@@ -1,0 +1,17 @@
+#!/bin/csh
+
+if( $# != 2) then
+
+    echo "Usage: $0 <first file> <second file>";
+
+    exit 1;
+
+endif
+
+set tmpfile = `mktemp`;
+
+mv "$1" $tmpfile;
+
+mv "$2" "$1";
+
+mv $tmpfile "$2";

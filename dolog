@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $# -ne 2 ]
+then
+    echo "Usage: dolog <command> <log file>";
+    exit -1;
+fi
+
+$1 2>&1 | tee -a $2;

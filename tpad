@@ -1,0 +1,4 @@
+#!/bin/bash
+
+id=`xinput | grep "SynPS/2 Synaptics TouchPad" | awk ' { print $6 } ' | sed 's_id=__'`;
+xinput set-prop $id "Device Enabled" $1;

@@ -1,0 +1,10 @@
+#!/bin/csh
+
+if ( $# == 0 ) then
+    echo "Usage: $0 [ strings ]";
+    exit 1;
+endif
+
+foreach myString ( "$*" )
+    echo "$myString " | tr '[:lower:]' '[:upper:]';
+end

@@ -1,0 +1,12 @@
+#!/bin/csh
+
+if ( $# != 2 ) then
+    printf "Usage: $0 <file 1> <file 2>\n";
+    exit 1;
+endif
+
+set file1 = `mktemp`;
+set file2 = `mktemp`;
+odt2txt $1 > $file1;
+odt2txt $2 > $file2;
+diff --side-by-side $file1 $file2;
