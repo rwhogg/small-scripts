@@ -1,0 +1,4 @@
+#!/bin/zsh
+
+find "$1" -depth -print | pax -wdz > "$1".tar.gz;
+ 
