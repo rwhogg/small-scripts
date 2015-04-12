@@ -1,4 +1,4 @@
-#!/bin/ksh -x
+#!/bin/bash -x
 
 tmpfile=`mktemp`;
 gs -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -sOutputFile=$tmpfile "$@";
