@@ -7,4 +7,4 @@ I would recommend using GNU stow to just copy them all into your private bin fol
 Dependencies: I can't remember them all, but you'll need at least these:
 * PHP 5
 * Ghostscript
-* Bash, csh, dash, and ksh (sooner or later I'll try and get rid of ksh and dash, but for now please bear with me)
+* Bash, csh, and dash (sooner or later I'll try and get rid of dash, but for now please bear with me)
