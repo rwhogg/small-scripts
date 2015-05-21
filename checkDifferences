@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+for myfile in *
+do
+   if [ -x $myfile ]
+   then
+       if [ $myfile != $0 ]
+       then
+           diff $myfile ~/bin/$myfile > /dev/null;
+           if [ $? -ne 0 ]
+           then
+               echo "$myfile is different!";
+           fi
+       fi
+   fi
+done
+
