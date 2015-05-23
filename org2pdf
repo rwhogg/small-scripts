@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Requires org-ruby (sudo gem install org-ruby)
+TMPFILE=`mktemp`;
+org-ruby $1 | html2ps > $TMPFILE;
+ps2pdf $TMPFILE $1.pdf;
+changeExtension.php $1.pdf pdf;
