@@ -1,0 +1,14 @@
+#!/bin/zsh
+
+if [ ! -x ./configure ]
+then
+    printf "Error: This command should only be used in a folder with a GNU-style configure script!\n";
+    exit 1;
+fi
+
+# redirect info files to the trash, since I don't want them
+# everything else can go into my home folder
+configure --prefix=/home/bob --infodir=/home/bob/Trash;
+printf "Remember to run both \"make install\" and \"make install-html\".\n";
+printf "We've already suppressed the installation of info!\n";
+printf "There is no need to use sudo; we've set the prefix to your home folder!";
