@@ -1,6 +1,6 @@
 VERSION=0.1
 
-package:
+package: dist-setup
 	fpm -s dir \
 	-n smallscripts \
 	-v $(VERSION) \
@@ -9,6 +9,9 @@ package:
 	--url "https://github.com/rwhogg/smallScripts" \
 	--description "Assorted scripts that I've found useful over time." \
 	-t deb usr;
+
+dist-setup:
+	cp README.txt usr/share/doc/smallscripts/;
 
 clean:
 	rm *.deb;
