@@ -1,0 +1,3 @@
+#!/bin/zsh
+
+soffice --invisible --convert-to pdf $1;
