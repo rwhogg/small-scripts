@@ -2,6 +2,7 @@ VERSION=0.1
 
 package: dist-setup
 	fpm -s dir \
+	-f \
 	-n smallscripts \
 	-v $(VERSION) \
 	--license BSD-2-Clause \
