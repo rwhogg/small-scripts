@@ -1,1 +1,1 @@
-share/doc/LICENSE.txt
+usr/share/doc/smallscripts/LICENSE.txt
