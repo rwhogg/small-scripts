@@ -1,18 +1,19 @@
-VERSION=0.1
+VERSION=0.2
 
-package: dist-setup
+package:
 	fpm -s dir \
 	-f \
 	-n smallscripts \
 	-v $(VERSION) \
 	--license BSD-2-Clause \
 	-m $(EMAIL) \
+	--depends php5 \
+	--depends libreoffice \
+	--depends csh \
+	--depends ghostscript \
 	--url "https://github.com/rwhogg/smallScripts" \
 	--description "Assorted scripts that I've found useful over time." \
 	-t deb usr;
-
-dist-setup:
-	cp README.txt usr/share/doc/smallscripts/;
 
 clean:
 	rm *.deb;

@@ -7,4 +7,4 @@ Run make to make a .deb package you can install.
 Dependencies: I can't remember them all, but you'll need at least these:
 * PHP 5
 * Ghostscript
-* Bash, csh, and dash (sooner or later I'll try and get rid of dash, but for now please bear with me)
+* Bash, csh, and dash
