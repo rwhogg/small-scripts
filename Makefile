@@ -7,7 +7,7 @@ package:
 	-v $(VERSION) \
 	--license BSD-2-Clause \
 	-m $(EMAIL) \
-	--depends php5 \
+	--depends php5-cli \
 	--depends libreoffice \
 	--depends csh \
 	--depends ghostscript \
