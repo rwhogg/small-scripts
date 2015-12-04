@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<script language="php">
+<?php
 /*
     File Name: hasSource.php
     Creator: Bob Hogg <hogg.bob.2@gmail.com>
@@ -28,4 +28,4 @@ $classToSourceArray = array_map(function($str)
 }, $classArray);
 $arrDiff = array_diff($classToSourceArray, $sourceArray);
 var_dump($arrDiff);
-</script>
+

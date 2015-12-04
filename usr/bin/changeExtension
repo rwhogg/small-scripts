@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<script language="php">
+<?php
 if($argc < 3)
 {
     printf("Usage: $argv[0] <files> extension\n");
@@ -13,4 +13,4 @@ for($i = 1; $i < $argc - 1; $i++)
     $newStr = str_replace(strchr($str, "."), "." . $extension, $str);
     `mv $str $newStr`;
 }
-</script>
+

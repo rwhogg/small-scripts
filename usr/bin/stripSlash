@@ -1,5 +1,5 @@
 #!/usr/bin/php
-<script language="php">
+<?php
     for($i = 1; $i < $argc; $i++)
     {
         $str = $argv[$i];
@@ -10,4 +10,3 @@
         }
         printf("%s\n", $str);
     }
-</script>

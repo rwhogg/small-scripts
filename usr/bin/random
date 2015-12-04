@@ -16,4 +16,3 @@
     {
         printf(rand($argv[2], $argv[3]) . "\n");
     }
-?>
