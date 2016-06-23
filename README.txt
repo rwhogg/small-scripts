@@ -1,1 +1,0 @@
-usr/share/doc/smallscripts/README.txt
