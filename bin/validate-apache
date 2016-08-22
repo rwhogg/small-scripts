@@ -6,7 +6,7 @@ then
 elif [ `which httpd` ]
 then
     exec httpd -t "$@";
-elif [ `whence apache2` ]
+elif [ `which apache2` ]
 then
     exec apache2 -t "$@";
 else
