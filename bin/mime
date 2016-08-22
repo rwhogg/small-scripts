@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ `whence mimetype` ]
+then
+    exec mimetype "$@";
+else
+    exec file --mime-type "$@";
+fi
