@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ `which httpd2` ]
+then
+    exec httpd2 -t "$@";
+elif [ `which httpd` ]
+then
+    exec httpd -t "$@";
+elif [ `whence apache2` ]
+then
+    exec apache2 -t "$@";
+else
+    echo "No Apache tool found!";
+    exit 1;
+fi
