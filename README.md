@@ -8,3 +8,4 @@ Dependencies: I can't remember them all, but you'll need at least these:
 * PHP 5
 * Ghostscript
 * Bash, csh and zsh (I'm not very consistent when it comes to shells)
+* xinput
