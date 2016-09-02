@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# FIXME: I don't even know if this works for my current mouse
+
+# check for the presence of my mouse
+xinput | grep "PixArt" 1> /dev/null 2>&1
+
+if [ $? -eq 0 ] # if found
+then
+    tpad 0;
+else
+    xinput | grep "USB OPTICAL MOUSE" 1> /dev/null 2>&1
+    if [ $? -eq 0 ]
+    then
+        tpad 0;
+    else
+        tpad 1;
+    fi
+fi

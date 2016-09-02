@@ -1,0 +1,6 @@
+#!/bin/bash
+
+for myfile in $*
+do
+    xdg-open $myfile &
+done
