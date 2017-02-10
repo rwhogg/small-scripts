@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ `whence mimetype` ]
+if [ `which mimetype` ]
 then
     exec mimetype "$@";
 else
