@@ -1,9 +1,0 @@
-#!/bin/zsh
-
-# Upgrade all Python packages installed.
-# Note that this assumes Python 2 and does not deal with Python 3.
-
-for mypackage in `pip list | awk '{print $1}'`
-do
-    easy_install -U $mypackage;
-done
