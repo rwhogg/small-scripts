@@ -13,4 +13,3 @@ for($i = 1; $i < $argc - 1; $i++)
     $newStr = str_replace(strchr($str, "."), "." . $extension, $str);
     `mv $str $newStr`;
 }
-

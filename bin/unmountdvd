@@ -1,4 +1,0 @@
-#!/bin/csh
-
-set $dvd_dir = ${HOME}/dvd;
-umount $dvd_dir;
