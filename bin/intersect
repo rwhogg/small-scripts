@@ -1,0 +1,13 @@
+#!/usr/bin/php
+<?php
+$search1 = $argv[1];
+$search2 = $argv[2];
+
+$results1 = explode("\n", `grep -rl $search1 .`);
+$results2 = explode("\n", `grep -rl $search2 .`);
+$results = array_intersect($results1, $results2);
+foreach($results as $result)
+{
+    echo $result . "\n";
+}
+
